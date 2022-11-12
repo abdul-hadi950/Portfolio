@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/12c9a96a85.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h2 class="logo"><span class="P">P</span>ortfolio<span class="dot">.</span></h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p class="top-p">Hello, My name is</p>
+            <h1><span class="A">Abdul</span>  Hadi</h1>
+            <p><span class="bottom-p"></span></p>
+        </div>
+    </div>
+</div>
+<!----------------------about--------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/pic-white.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm currently doing my Bachelor's degree in Electronics and
+                    Communication from the College of Engineering, Thalassery under
+                    A P J Abdul Kalam Technical University. I have experience as a
+                    Front-End Web Developer and Python Developer.
+                    I am passionate about building solutions that solve real-world
+                    challenges faced by individuals or organizations. Through my research, I
+                    have strived to build solutions that help society.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('responsibilities')">Responsibilities</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front-End Developer</span><br>Build Front-End Web Pages</li>
+                        <li><span>Python Developer</span><br>Develop Python Application</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-2023</span><br><p class="edu-title">B. Tech, College of Engineering Thalassery</p><br>Electronics and Communication Engineering</li>
+                        <li><span>2018-2019</span><br><p class="edu-title">XII, CHM Higher Secondary School</p><br>Percentage : 75%</li>
+                        <li><span>2016-2017</span><br><p class="edu-title">X, CHM Higher Secondary School</p><br>Percentage : 80%</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="responsibilities">
+                    <ul>
+                        <li><span>Core Member</span><br><p class="edu-title">HackClub COET</p><br>&emsp;-Python basic training for 100+ students.
+                        <br>&emsp;-Worked in a team consisting of 20 member.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------projects--------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-eye"></i>
+                <h2>A I Biller</h2>
+                <p>A I Powered Autonomous Checkout system for retail store using computer vision and mechine learning.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-microchip"></i>
+                <h2>A I Biller v2.O</h2>
+                <p>A I Powered Autonomous Checkout system for retail store using deep learning technology.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>GUI Unit Converter</h2>
+                <p>Basic Unit Converter with 14 unit converting features using python.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!------------------------------contact--------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <a href="mailto:abdul2hadi2k2k@gmail.com"><i class="fa-solid fa-envelope"></i>abdul2hadi2k2k@gmail.com</a>
+                <p><i class="fa-solid fa-phone"></i>+91 8304048725</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/abdul-hadi-k-k-53064b194/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/abdul-hadi950"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/haaadi_abdul/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://wa.me/qr/K3HBUVAWJSU6F1"><i class="fa-brands fa-square-whatsapp"></i></a>
+                </div>
+                <a href="CV/Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Portfolio. Made by 😍 Abdul Hadi K K</p>
+    </div>
+</div>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed(".bottom-p",{
+        strings:["Front-End Developer","Python Developer"],
+        typeSpeed: 70,
+        backSpeed: 60,
+        loop:true,
+    });
+</script>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    };
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw0AaElmR2NgF3hjYv5fqva8AS1rliM8jEje4C8RsJxuDqoTOd1hK2SEKJGDQCTqtgn/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</html>
