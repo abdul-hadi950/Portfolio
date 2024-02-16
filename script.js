@@ -1,5 +1,5 @@
  var typed = new Typed(".bottom-p",{
-     strings:["Front-End Developer","Python Developer"],
+     strings:["Web Designer","Digital Maerketing", "SEO"],
      typeSpeed: 70,
      backSpeed: 60,
      loop:true,
